@@ -1,0 +1,36 @@
+.l-table {
+    display: table;
+}
+
+.l-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.l-flex {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.w-100 {
+    width: 100%;
+}
+.w-75 {
+    width: 75%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-25 {
+    width: 25%
+}
+.w-66 {
+    width: 66%;
+}
+.w-33 {
+    width: 33%;
+}

@@ -1,0 +1,52 @@
+.hover-item {
+
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  .hover-item--overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    &.hover-item--trans {
+      background: transparent;
+    }
+  }
+
+  .hover-item--container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all .4s ease-out;
+    &.hide-on-hover {
+      opacity: 1;
+    }
+    &.show-on-hover {
+      opacity: 0;
+    }
+  }
+
+}
+
+.no-touch {
+
+  .hover-item:hover {
+    .hover-item--container.hide-on-hover {
+      opacity: 0;
+    }
+    .hover-item--container.show-on-hover {
+      opacity: 1;
+    }
+    .hover-item--overlay {
+      opacity: 1;
+    }
+  }
+
+}

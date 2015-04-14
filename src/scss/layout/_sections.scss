@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+$small-pad : 10 !default;
+$medium-pad : 20 !default;
+$large-pad : 40 !default;
+
+$small-factor: 1 !default;
+$medium-factor: 2 !default;
+$large-factor : 3 !default;
+
+@mixin section-styles($pad) {
+
+  padding: rem-calc($pad * $small-factor) 0;
+  .push-down { margin-bottom: rem-calc(-$pad * $small-factor); }
+  .pull-up { margin-top: rem-calc(-$pad * $small-factor); }
+
+  @media #{$medium-up} {
+    padding: rem-calc($pad * $medium-factor) 0;
+    .push-down { margin-bottom: rem-calc(-$pad * $medium-factor); }
+    .pull-up { margin-top: rem-calc(-$pad * $medium-factor); }
+  }
+  @media #{$large-up} {
+    padding: rem-calc($pad * $large-factor) 0;
+    .push-down { margin-bottom: rem-calc(-$pad * $large-factor); }
+    .pull-up { margin-top: rem-calc(-$pad * $large-factor); }
+  }
+}
+
+
+@mixin padding-styles($pad) {
+  padding: rem-calc($pad * $small-factor);
+  .pull-left { margin-left: rem-calc(-$pad * $small-factor); }
+  .pull-right { margin-right: rem-calc(-$pad * $small-factor); }
+
+  @media #{$medium-up} {
+    padding: rem-calc($pad * $medium-factor);
+    .pull-left { margin-left: rem-calc(-$pad * $medium-factor); }
+    .pull-right { margin-right: rem-calc(-$pad * $medium-factor); }
+  }
+  @media #{$large-up} {
+    padding: rem-calc($pad * $large-factor);
+    .pull-left { margin-left: rem-calc(-$pad * $large-factor); }
+    .pull-right { margin-right: rem-calc(-$pad * $large-factor); }
+  }
+}
+
+
+@mixin margin-styles($pad) {
+  margin-bottom : rem-calc($pad * $small-factor);
+  @media #{$medium-up} {
+    margin-bottom : rem-calc($pad * $medium-factor);
+  }
+  @media #{$large-up} {
+    margin-bottom : rem-calc($pad * $large-factor);
+  }
+}
+
+.section {
+
+  @include clearfix;
+  position: relative;
+  padding: 0;
+  z-index: 1;
+
+  &.finalize {
+    padding-bottom: 0 !important;
+  }
+}
+
+// sections
+
+.section__small {
+  @include section-styles($small-pad);
+}
+
+.section__medium {
+  @include section-styles($medium-pad);
+}
+
+.section__large {
+  @include section-styles($large-pad);
+}
+
+
+// Padding
+.padding__small {
+  @include padding-styles($small-pad);
+}
+
+.padding__medium {
+  @include padding-styles($medium-pad);
+}
+
+.padding__large {
+  @include padding-styles($large-pad);
+}
+
+
+// margins
+.margin__small {
+  @include margin-styles($small-pad);
+}
+
+.margin__medium {
+  @include margin-styles($medium-pad);
+}
+
+
+.margin__large {
+  @include margin-styles($large-pad);
+}
+
+
+
+.section--text__light {
+  color: #fff;
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.section--color__primary {
+  // background-color: $light-blue;
+}
+
+.section--color__secondary {
+  // background-color: $dark-blue;
+}

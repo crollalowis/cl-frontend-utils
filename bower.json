@@ -1,0 +1,24 @@
+{
+  "name": "cl-frontend-utils",
+  "version": "1.0.0",
+  "authors": [
+    "Richard Hoffmann <r.hoffmann@crolla-lowis.de>"
+  ],
+  "description": "CL Frontend Utilities (SCSS)",
+  "main": "src/scss/utils.scss",
+  "keywords": [
+    "scss",
+    "helpers",
+    "frontend",
+    "library"
+  ],
+  "license": "MIT",
+  "homepage": "git@github.com:crollalowis/cl-frontend-utils.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
