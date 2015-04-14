@@ -5,7 +5,7 @@
     "Richard Hoffmann <r.hoffmann@crolla-lowis.de>"
   ],
   "description": "CL Frontend Utilities (SCSS)",
-  "main": "src/scss/utils.scss",
+  "main": "src/scss/cl-frontend-utils.scss",
   "keywords": [
     "scss",
     "helpers",
