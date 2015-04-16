@@ -5,15 +5,22 @@
   transform: translateY(-50%);
 }
 
+
+@mixin bg-image-centered {
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 @mixin keep-ratio($ratio) {
 
   $aspect-h-factor: 1 / $ratio;
   $ratio-padding-percent : 100 * $aspect-h-factor;
-
+  line-height: 1;
   display: block;
   position: relative;
 
   &:before {
+    line-height: 1;
     padding-top: percentage($aspect-h-factor);
     content: '.';
     font-size: 0;

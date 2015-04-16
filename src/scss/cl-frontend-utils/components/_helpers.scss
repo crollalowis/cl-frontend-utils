@@ -13,8 +13,7 @@
 }
 
 .bg-image-centered {
-    background-size: cover;
-    background-position: 50% 50%;
+    @include bg-image-centered;
 }
 
 .circular {
