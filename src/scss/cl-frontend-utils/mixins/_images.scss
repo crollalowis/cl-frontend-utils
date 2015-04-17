@@ -6,7 +6,7 @@
 }
 
 
-@mixin bg-image-centered {
+@mixin bg-image-cover {
   background-position: 50% 50%;
   background-size: cover;
 }
