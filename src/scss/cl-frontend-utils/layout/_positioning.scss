@@ -1,0 +1,48 @@
+
+/* positioning */
+
+.center-abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.center-vert {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+
+.center-horiz {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+%abs-positioning {
+  position: absolute;
+}
+
+.abs-bottom {
+  @extend %abs-positioning;
+  bottom: 0;
+}
+
+.abs-top {
+  @extend %abs-positioning;
+  top: 0;
+}
+
+.abs-left {
+  @extend %abs-positioning;
+  left: 0;
+}
+
+.abs-right {
+  @extend %abs-positioning;
+  right: 0;
+}
