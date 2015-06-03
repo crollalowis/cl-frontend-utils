@@ -1,6 +1,6 @@
 {
   "name": "cl-frontend-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CL Frontend Utilities (SCSS)",
   "main": "src/scss/cl-frontend-utils.scss",
   "scripts": {
