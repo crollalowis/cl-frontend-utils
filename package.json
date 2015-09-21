@@ -10,8 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/crollalowis/cl-frontend-utils.git"
   },
-  "author": "Richard Hoffmann",
-  "license": "ISC",
+  "keywords": [
+    "scss",
+    "helpers",
+    "frontend",
+    "library"
+  ],
+  "author": "Richard Hoffmann <r.hoffmann@crolla-lowis.de>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/crollalowis/cl-frontend-utils/issues"
   },
