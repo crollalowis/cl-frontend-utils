@@ -1,0 +1,6 @@
+@mixin clearfix {
+  overflow: auto;
+  &:after {
+    clear: both;
+  }
+}
