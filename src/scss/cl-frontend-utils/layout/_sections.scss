@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@include '../mixins/general';
 
 $small-pad : 10 !default;
 $medium-pad : 20 !default;
