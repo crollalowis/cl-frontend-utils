@@ -1,6 +1,6 @@
 {
   "name": "cl-frontend-utils",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "`npm install crollalowis/cl-frontend-utils`",
   "main": "src/scss/cl-frontend-utils.scss",
   "scripts": {
