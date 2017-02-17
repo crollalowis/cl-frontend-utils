@@ -1,0 +1,48 @@
+$grid-breakpoint-names: (
+  small: all,
+  medium: $medium-up,
+  large: $large-up,
+) !default;
+
+$grid-max-cols: 6 !default;
+
+@mixin flexgrid-base() {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  &-item {
+    display: flex;
+    &--center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  > * {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+  }
+}
+
+@mixin flexgrid-rules($breakpoints: $grid-breakpoint-names, $max-cols: $grid-max-cols) {
+  @each $bp-name, $bp-config in $breakpoints {
+    @media #{$bp-config} {
+      @for $i from 1 through 6 {
+        &.#{$bp-name}-#{$i} {
+          > * {
+            flex-basis: percentage(1/$i);
+          }
+        }
+      }
+    }
+  }
+}
+
+.flexgrid {
+  @include flexgrid-base();
+  @include flexgrid-rules();
+}

@@ -102,12 +102,9 @@ $large-factor : 3 !default;
   @include margin-styles($medium-pad);
 }
 
-
 .margin__large {
   @include margin-styles($large-pad);
 }
-
-
 
 .section--text__light {
   color: #fff;
@@ -117,12 +114,4 @@ $large-factor : 3 !default;
   a {
     color: #fff;
   }
-}
-
-.section--color__primary {
-  // background-color: $light-blue;
-}
-
-.section--color__secondary {
-  // background-color: $dark-blue;
 }
